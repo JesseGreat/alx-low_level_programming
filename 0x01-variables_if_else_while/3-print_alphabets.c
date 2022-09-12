@@ -7,32 +7,18 @@
  */
 int main(void)
 {
-	int d = 48, a = 48, i = 48;
+	char c = 'a';
+	char C = 'A';
 
-	while (d < 58)
+	while (c <= 'z')
 	{
-		a = 48;
-		while (a < 58)
-		{
-			i = 48;
-			while (i < 58)
-			{
-				if (d != a && a != i && d != i && d < a && a < i)
-				{
-					putchar(d);
-					putchar(a);
-					putchar(i);
-					if (!(d == 55 && a == 56 && i == 57))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				i++;
-			}
-			a++;
-		}
-		d++;
+		putchar(c);
+		c++;
+	}
+	while (C <= 'Z')
+	{
+		putchar(C);
+		C++;
 	}
 	putchar('\n');
 
