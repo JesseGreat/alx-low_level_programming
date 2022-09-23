@@ -38,6 +38,6 @@ void print_number(int num)
 			d /= 10;
 			_putchar('0' + (n / d) % 10);
 		}
-		_putchar('0' + n % 10)
+		_putchar('0' + n % 10);
 	}
 }
